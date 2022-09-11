@@ -1,0 +1,715 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Aside y videos*/
+aside{
+    float: right;
+    width: 25%;
+    max-width: 25%;
+
+}
+.section2{
+    float: left;
+    width: 70%;
+    margin-top: -5%;
+}
+#contenedor3{
+    background-color: rgb(94, 94, 94);
+    color:black;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    font-weight:lighter;
+    margin-top: 8%;
+    height: 50%;
+    padding-bottom: 2%;
+}
+
+#contenedor3 img{
+    width: 52%;
+    cursor: pointer;
+}
+
+#contenedor3 img:hover{
+    width: 55%;
+}
+
+
+.containerVideo{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerVideo .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
+
+
+.containerVideo ul{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.containerVideo ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 7%;
+
+}
+
+
+.containerVideo ul li video{
+    width: 500%;
+    transition: all 0.3s;
+
+}
+.containerVideo ul li video:hover{
+    transform: scale(1.1);
+}
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-size: 250%;
+    margin-left: 7%;
+    font-family: 'Segoe UI', serif;
+}
+
+h7{
+    font-size: 250%;
+    font-family:'Segoe UI', serif;
+    color:rgb(114, 7, 25);
+    font-weight: bolder;
+}
+
+.tituloPeli{
+    background-color: white;
+    width: 100%;
+}
+
+
+
+/*Aside y videos*/
+
+/*Color de fondo del header*/
+.bg-color{
+    background-color:rgb(22, 22, 22);
+    color:#333;
+    font-family: 'Segoe UI', serif;
+    font-weight:normal;
+    list-style-type:none;
+    font-size: 16px;
+}
+
+/*BANNER*/
+body {
+    font-size: 15px;
+    line-height: 1.52;
+    color:rgb(117, 117, 117);
+    font-family:'Segoe UI', serif;
+    font-weight: normal;
+    overflow-x: hidden;
+    background-color:black;
+}
+
+/*MENU*/
+/*COLOR DE LA LETRA CUANDO SE SELECCIONA*/
+.sidenav a:hover, .offcanvas a:focus{
+    color: rgb(150, 1, 1);
+}
+/*COLOR DEL FONDO*/
+.sidenav ul {
+    font-family:'Segoe UI', serif;
+    font-weight:700;
+    list-style-type:none;
+    color:black;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+
+}
+.sidenav li {
+    float: left;
+}
+.sidenav li:last-child {
+    border-right: none;
+}
+
+/*COLOR DE LA LETRA*/
+.sidenav li a {
+    display: block;
+    color:rgb(117, 117, 117);
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+/*SUBMENU*/
+.sidenav li ul{
+    display: none;
+}
+.sidenav li:hover > ul {
+    display:block;
+}
+
+
+
+/*BOTON BUSCAR*/
+input[type="search"]{
+    width: 4rem; /*ancho por defecto*/
+    height: 5rem;
+    background: rgb(22, 22, 22) url(../images/icon.png) no-repeat 19px center; /*icono lupa*/
+    padding: 0.563rem 0.625rem  0.563rem 2rem;
+    padding-left: 7rem; /*espacio entre el icono lupa y el placeholder*/
+    border-radius: 15em;
+    -webkit-transition: all .5s; /* transición de .5seg a todos los elementos para chrome*/
+    -moz-transition: all .5s; /* transición de .5seg a todos los elementos para mozilla*/
+    -o-transition: all .5s; /* transición de .5seg a todos los elementos para ophera*/
+    transition: all .5s; /* transición de .5seg a todos los elementos*/
+    outline: none; /* ocultar el fucos automático de los input */
+    border: 2px solid  rgb(22, 22, 22);
+    float:right;
+    margin: 0.5%;
+}
+input[type="search"]:focus{
+    width: 40rem; /*tamaño del boton buscar al hacer click*/
+    padding-left: 7rem; /*espacio entre el icono lupa y el placeholder*/
+    color: white;
+    background: rgb(22, 22, 22) url(../images/icon.png) no-repeat 19px center; /*icono lupa*/
+    border: 2px solid rgb(117, 117, 117);
+}
+
+/*Otros botones del header*/
+.boton_personalizado{
+    text-decoration: none;
+    font-size:83%;
+    color: rgb(150, 1, 1);
+    background-color: rgb(22, 22, 22);
+    border-radius: 15em;
+    border: 2px solid rgb(22, 22, 22);
+    font-family:'Segoe UI', serif;
+    font-weight: bold;
+    display: block;
+    width: 9rem; /*ancho por defecto*/
+    height: 5rem;
+    margin:0.5%;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+
+}
+.boton_personalizado:hover{
+    color: rgb(22, 22, 22);
+    background-color: rgb(150, 1, 1);
+    border: 2px solid  rgb(150, 1, 1);
+}
+
+
+/*Pie de pagina*/
+.footer {
+    display: block;
+    height: 100%;
+    background-color: rgb(22, 22, 22);
+    font-family:'Segoe UI', serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer .social-list  {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: rgb(150, 1, 1);
+    text-transform: uppercase;
+    margin: 0 1%;
+    float:right;
+}
+/*Pie de pagina*/
+
+
+
+/*CARRUZEL DE IMAGENES*/
+#container-slider
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+}
+#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+#container-slider .arrowPrev, #container-slider .arrowNext{
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.65);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2;
+}
+#container-slider .arrowNext {
+    left: initial;
+    right: 50px !important;
+}
+.content_slider{
+    padding: 15px 30px;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+}
+.content_slider div{
+    text-align: center;
+}
+.content_slider h2{
+    font-family: 'arial', serif;
+    font-size: 30pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content_slider p {
+    font-size: 15pt;
+    font-family: 'arial', serif;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+#slider li .content_slider{
+    background: rgba(0, 0, 0, 0.50);
+    padding: 10px 125px;
+}
+.content_slider{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.listslider {
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    bottom: 5%;
+    list-style: none;
+    z-index: 3;
+    transform: translateX(-50%);
+}
+.listslider li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.listslider li a {
+    background: #CCC;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item-select-slid {
+    background: #FFF  !important;
+}
+
+@media screen and (max-width: 460px){
+    .content_slider h2 {
+        font-size: 15pt !important;
+    }
+    .content_slider p {
+        font-size: 12pt !important;
+    }
+    #container-slider .arrowPrev, #container-slider .arrowNext{
+        font-size: 20pt;
+    }
+    #container-slider .arrowPrev{
+        left: 15px;
+    }
+    #container-slider .arrowNext{
+        right: 15px !important;
+    }
+    #slider{
+        height: 400px;
+        min-height: 400px;
+    }
+    #slider li .content_slider{
+        padding: 10px 35px;
+    }
+    .btnSlider{
+        padding: 10px 30px;
+        font-size: 10pt;
+    }
+
+}
+/*CARRUZEL DE IMAGENES*/
+
+/*Registrarse*/
+p{
+    font-size:300%;
+    align-items: center;
+    margin-top:2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+/*Registrarse*/
+
+
+/*Contacto*/
+.boton{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(150, 1, 1);
+    border: 0.7rem solid  rgb(150, 1, 1);
+    text-decoration: none;
+    font-size:83%;
+    color: rgb(22, 22, 22);
+    border-radius: 15em;
+    font-family: 'Segoe UI', serif;
+    font-weight: bold;
+    width: 9rem;
+    height: 5rem;
+    margin: 2%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.boton:hover{
+    color:rgb(22, 22, 22);
+    background-color: red;
+    border: 2px solid  red;
+}
+
+
+.form-group{
+    margin:  2rem 2rem !important;
+    padding-bottom: 0.8rem;
+    font-family:'Segoe UI', serif;
+    font-weight: bold;
+    font-size:125%;
+}
+
+
+
+#square{
+    background-color:rgb(22, 22, 22);
+    border-radius: 1%;
+    overflow: auto;
+    width: 26em;
+    height: 92%;
+    max-width: 100%;
+    padding: 0.8em;
+    box-sizing: border-box !important;
+}
+
+/*HISTORIA, MISION,VISION*/
+#square2{
+    background-color:rgb(22, 22, 22);
+    border-radius: 1%;
+    overflow: auto;
+    width: 50em;
+    height: 55%;
+    max-width: 100%;
+    padding: 0.6em;
+    box-sizing: border-box !important;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-size:larger;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.container .visitenosInfo{
+    color:rgb(150, 1, 1);
+
+
+}
+/*CATALOGO*/
+#introduccion{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 170%;
+}
+
+h5{
+    font-size: 170%;
+    text-align:center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bolder;
+    margin-bottom: 0;
+    color:rgb(114, 7, 25);
+}
+
+.playIcon{
+    font-size: 70%;
+    font-weight: normal;
+    color: rgb(114, 7, 25);
+    text-transform: uppercase;
+}
+
+/*CATALOGO MENU*/
+.container2{
+    width: 100%;
+    height:300vh;
+    height: 55%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .categorias{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 90%;
+
+}
+
+.container2 .categorias a{
+    color:rgba(204, 204, 204, 0.65);
+    margin: 0 4%;
+    font-size: 115%;
+    font-weight:700;
+    text-decoration: none;
+}
+
+
+.container2 .categorias a.activo{
+    color:rgb(114, 7, 25);
+}
+
+/*Grid*/
+
+.grid{
+    position:relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas{
+    opacity: 1;
+}
+
+.grid .item{
+    position:absolute;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.33333% - 20px);/*En cada bloque van a quedar 3 imagenes que forman el 100% de la pantalla, calcula el 100% menos el borde*/
+}
+
+.grid .item-contenido{
+    position: relative;
+}
+
+/*DEFINIR CARACTERISTICAS PARA UNAS IMAGENES EN ESPECIFICO...*/
+.grid .item img{
+    width: 95%;
+    cursor: pointer;
+    vertical-align: top;
+
+}
+
+.grid .item img:hover{
+    width: 100%;
+}
+
+.grid .item .comprar{
+    color:rgb(117, 117, 117);
+    align-items: center;
+    font-size: 115%;
+    text-decoration: none;
+}
+
+.grid .item .comprar:hover{
+    color:rgb(255, 255, 255);
+
+}
+
+
+/*DEFINIR CARACTERISTICAS PARA UNA IMAGENES EN ESPECIFICO CUANDO SE SELECCIONA(ZOOM)...*/
+.overlay{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,.9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items:center;/*centra vertical...*/
+    justify-content:center;/*centra horizontal...*/
+    flex-direction:column;/*acomoda los elementos de manera de columnas IMP...*/
+}
+
+.overlay.activo{
+    display: flex;
+}
+
+.overlay img{
+    max-width: 100%;
+    margin-top: 20%;
+}
+
+.overlay .descripcionPeli {
+    display: block;
+    background:white;
+    padding: 2px;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 10px;
+    width: 26%;
+    overflow: auto;
+    font-family: 'Segoe UI', serif;
+    font-weight: bold;
+    font-size: 125%;
+    color:black;
+}
+
+.contenedor-img{
+    position:relative;
+
+}
+
+.overlay #btn-cerrar-popup{
+    background: none;
+    font-size: 150%;
+    color:white;
+    border: none;
+    cursor:pointer;
+    position:absolute;
+    right: -7%;
+    top: 15%;
+}
+/*CATALOGO*/
+
+
+/*RECOMENDACIONES ASIDE*/
+/*División de la pantalla*/
+.recomendacion {
+    height:100vh;
+    margin:0;
+    padding:0;
+    width:100%;
+    background: url(../images/fondo1.png);
+}
+
+.recomendacion .recuadro {
+    width:47%;
+    display:inline-block;
+    height:46%;
+    margin: 1%;
+    overflow: auto;
+    padding-right: 1%;
+}
+.recomendacion #uno{
+    background-color:rgb(22, 22, 22);
+    border:1px solid rgb(22,22,22)
+}
+
+.recomendacion #dos{
+    background-color:rgb(22, 22, 22);
+    border:1px solid rgb(22,22,22)
+}
+
+.recomendacion #tres{
+    background-color:rgb(22, 22, 22);
+    border:1px solid rgb(22,22,22)
+}
+
+.recomendacion #cuatro{
+    background-color:rgb(22, 22, 22);
+    border:1px solid rgb(22,22,22)
+}
+
+/*Titulos*/
+.recomendacion .tituloAside{
+    color:rgb(114, 7, 25);
+    font-weight: bolder;
+    font-size: 140%;
+    text-align: center;
+}
+
+/*Centrar una imagen*/
+.recomendacion img{
+    display:block;
+    margin:auto;
+}
+
+.recomendacion .ContentAside{
+    margin-left: 2%;
+    color:rgb(117, 117, 117);
+    font-weight: bolder;
+    text-align: justify;
+}
+a:hover{
+    cursor: pointer;
+}
+
+/*Mapa*/
+#map{
+    height: 50%;
+    width: 50%;
+    margin-top: 5%;
+}
